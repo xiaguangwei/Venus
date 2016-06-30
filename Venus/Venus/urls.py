@@ -14,8 +14,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from Masterdata.views import HomePageView, PaginationView
+from .views import IndexView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', IndexView.as_view(), name='index'),
 
+    url(r'^home$', HomePageView.as_view(), name='home'),
+    url(r'^pagination$', PaginationView.as_view(), name='pagination'),
 ]

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../static/css/venus.css"/>
+{% extends 'bootstrap.html' %}
+
+{% load bootstrap3 %}
+
+{% block bootstrap3_content %}
+    <div class="index-head">
+        <img src="../static/imgs/Eyes.png" alt="">
+         <div class="index-head-rt"><a class="btn btn-primary btn-lg" href="{% url 'home' %}" role="button">Login</a></div>
+        <div class="index-head-mid">
+            <ul class="nav nav-pills navbar-right">
+                <li role="presentation"><a style="color: #5fc87e; font-size: 1.2em" href="#">企业文化</a></li>
+                <li role="presentation"><a style="color: #5fc87e; font-size: 1.2em" href="#">产品库</a></li>
+                <li role="presentation"><a style="color: #5fc87e; font-size: 1.2em" href="#">招聘英才</a></li>
+                <li role="presentation"><a style="color: #5fc87e; font-size: 1.2em" href="#">关于我们</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="index-body">
+        <div>
+            <h2>Multi-location Website Uptime Monitoring</h2>
+            <p >Be the first to know if your website is down anywhere in the world!</p>
+        </div>
+        <img src="../static/imgs/map.png" alt="">
+    </div>
+    <div class="foot">
+        ddd
+    </div>
+
+{% endblock %}

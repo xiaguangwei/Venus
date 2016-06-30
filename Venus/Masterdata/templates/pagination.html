@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load bootstrap3 %}
+
+{% block title %}
+    Pagination
+{% endblock %}
+
+{% block content %}
+
+    <table class="table">
+        {% for line in lines %}
+            <tr>
+                <td>{{ line }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <hr>
+  <button type="button" class="btn">fffddd</button>
+
+{% endblock %}
